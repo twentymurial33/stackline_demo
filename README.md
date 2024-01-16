@@ -1,6 +1,6 @@
 # Deployed App
 
-(https://stacklineinterview.netlify.app)
+https://stacklineinterview.netlify.app
 
 # Getting Started with Create React App
 
