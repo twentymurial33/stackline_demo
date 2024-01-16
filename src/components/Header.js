@@ -4,7 +4,13 @@ import { HeaderContainer } from "./styled";
 function Header() {
   return (
     <HeaderContainer>
-      <img src={ReactLogo} alt="logo" height="100px" width="100px" />
+      <img
+        src={ReactLogo}
+        alt="logo"
+        height="100px"
+        width="100px"
+        style={{ marginLeft: "40px" }}
+      />
     </HeaderContainer>
   );
 }
