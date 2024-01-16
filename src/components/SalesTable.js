@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import SalesData from "../data/stackline_frontend_assessment_data_2021.json";
 import { StyledTable, StyledTh } from "./styled";
 
 function SalesTable({ itemId }) {
   const [salesData, setSalesData] = useState([]);
 
-  const fetchSalesData = () => {
+  const fetchSalesData = useCallback(() => {
     try {
       const item = SalesData.find((item) => item.id === itemId);
       if (item) {
@@ -16,11 +16,11 @@ function SalesTable({ itemId }) {
     } catch (error) {
       console.error("Error fetching sales data:", error);
     }
-  };
+  }, [itemId]);
 
   useEffect(() => {
     fetchSalesData();
-  }, [itemId]);
+  }, [itemId, fetchSalesData]);
 
   return (
     <div>
