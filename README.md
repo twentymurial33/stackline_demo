@@ -1,4 +1,4 @@
-#Deployed App 
+# Deployed App
 
 (https://stacklineinterview.netlify.app)
 
