@@ -1,9 +1,8 @@
 import ReactLogo from "../assets/img/stackline_logo.svg";
-import { HeaderContainer } from "./styled";
 
 function Header() {
   return (
-    <HeaderContainer>
+    <>
       <img
         src={ReactLogo}
         alt="logo"
@@ -11,7 +10,7 @@ function Header() {
         width="100px"
         style={{ marginLeft: "40px" }}
       />
-    </HeaderContainer>
+    </>
   );
 }
 
