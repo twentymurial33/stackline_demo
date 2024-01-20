@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
 export const DrawerWrapper = styled.div`
-  position: relative;
-  margin-top: 10px;
+  margin-top: 100px;
   left: 0;
   height: 100vh;
-  width: 200px;
+  width: 260px;
   background-color: #ffffff;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
   overflow-y: auto;
@@ -24,8 +23,7 @@ export const HeaderContainer = styled.div`
 `;
 
 export const StyledTable = styled.table`
-  width: 100%;
-  border-collapse: collapse;
+  width: 80%;
   margin-top: 20px;
 `;
 

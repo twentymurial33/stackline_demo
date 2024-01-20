@@ -10,7 +10,7 @@ import Header from "../components/Header.js";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-const drawerWidth = 300;
+const drawerWidth = 240;
 
 const AppBar = styled(MuiAppBar, {
   shouldForwardProp: (prop) => prop !== "open",
@@ -42,8 +42,12 @@ export default function Dashboard() {
       <Drawer />
       <Box component="main">
         <Toolbar />
-        <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
-          <Grid container spacing={3}>
+        <Container
+          maxWidth="lg"
+          sx={{ mt: 4, mb: 4 }}
+          style={{ marginLeft: "40px", marginTop: "50px" }}
+        >
+          <Grid container spacing={4}>
             <Grid item xs={12} md={8} lg={9}>
               <SalesData />
             </Grid>
